@@ -12,7 +12,7 @@ setGeneric("setOptions<-", function(object, value) {
 #' @rdname setOptions
 setMethod(f = "setOptions<-", signature = "chart", definition = function(object, 
     value) {
-    object@options <- append(getOptions(a), value)
+    object@options <- append(getOptions(object), value)
     validObject(object)
     return(object)
 })
