@@ -6,6 +6,11 @@
 
     library(devtools)
     install_github("rHighcharts", "reinholdsson")
+    
+## Example
+
+    library(shiny)
+    runGist(4242266)
 
 ## License
 
