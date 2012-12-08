@@ -1,0 +1,5 @@
+export(Chart)
+exportMethods("setOptions<-")
+exportMethods(getOptions)
+exportMethods(print)
+exportMethods(toJSON)
