@@ -12,7 +12,7 @@
     library(shiny)
     runGist(4242266)
 
-![](http://cloud.github.com/downloads/reinholdsson/rHighcharts/rHighcharts-screenshot.png)
+![](http://cloud.github.com/downloads/reinholdsson/rHighcharts/rHighcharts-app-screenshot.png)
 
 ## License
 
