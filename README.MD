@@ -1,8 +1,0 @@
-# rHighcharts
-
-## Introduction
-
-## Installation
-
-## License
-
