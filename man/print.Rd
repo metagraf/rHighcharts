@@ -7,6 +7,8 @@
 \description{
   Convert a chart object to HTML. After building a chart
   one usually wants to convert it to a HTML character
-  string.
+  string. The JavaScript files are included in the
+  rHighcharts package, and thus automatically added to the
+  HTML file.
 }
 
