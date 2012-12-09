@@ -20,4 +20,4 @@ The code for this example is available at [https://gist.github.com/4242266](http
 
 ## License
 
-This package uses Highcharts JS to generate graphs, the licence for the JavaScript library is only free for personal or non-profit projects. Read the more about the Highcharts licence at [http://shop.highsoft.com/highcharts.html](http://shop.highsoft.com/highcharts.html).
+This package uses [Highcharts JS](https://github.com/highslide-software/highcharts.com) to generate graphs, the licence for the JavaScript library is only free for personal or non-profit projects. Read the more about the Highcharts licence at [http://www.highcharts.com/license](http://www.highcharts.com/license).
