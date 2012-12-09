@@ -2,7 +2,7 @@
 \alias{print}
 \title{Print chart as HTML}
 \arguments{
-  \item{x}{chart object}
+  \item{x}{Chart object}
 }
 \description{
   Convert a chart object to HTML. After building a chart

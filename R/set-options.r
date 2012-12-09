@@ -1,6 +1,10 @@
 #' Set list of chart object
 #'
 #' Method to set the list of a chart object.
+#'
+#' @param object Chart object
+#' @param value Options list
+#'
 #' @export
 #' @docType methods
 #' @rdname set_options

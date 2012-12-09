@@ -1,6 +1,9 @@
 #' Get options of chart object
 #'
 #' Method to get the options list of a chart object.
+#'
+#' @param object Chart object
+#'
 #' @export
 #' @docType methods
 #' @rdname get_options
