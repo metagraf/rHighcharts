@@ -1,6 +1,8 @@
 # rHighcharts
 
-... WORK IN PROGRESS ...
+An R package to generate Highcharts graphs from within R. The package depends on the [Highcharts JS](https://github.com/highslide-software/highcharts.com), a JavaScript charting library based on SVG and VML rendering, by [Highsoft Solutions AS](http://highsoft.com/).
+
+rHighcharts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
 
 ## Installation
 
