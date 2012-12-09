@@ -1,5 +1,6 @@
 export(chart)
 exportMethods("set_options<-")
 exportMethods(get_options)
+exportMethods(print)
 exportMethods(set_subtitle)
 exportMethods(set_title)
