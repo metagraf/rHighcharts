@@ -11,7 +11,7 @@ rHighcharts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
     
 ## Example
 
-See below example for a simple illustration of this package, using a shiny web server. 
+See the example below for a simple illustration of how to use this package with a shiny web server. 
 
     library(shiny)
     runGist(4242266)
