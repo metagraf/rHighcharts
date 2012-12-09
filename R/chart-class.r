@@ -1,11 +1,9 @@
-setClass(Class = "chart", representation = representation(options = "list"), 
-    validity = function(object) {
-        if (!RJSONIO:::isValidJSON(RJSONIO:::toJSON(object@options), 
-            TRUE)) {
-            stop("The argument is not a valid JSON list")
-        }
-        return(TRUE)
-    })
+setClass(Class = "chart", representation = representation(options = "list"), validity = function(object) {
+    if (!RJSONIO:::isValidJSON(RJSONIO:::toJSON(object@options), TRUE)) {
+        stop("The argument is not a valid JSON list")
+    }
+    return(TRUE)
+})
 
 #' Chart class initializor
 #'
