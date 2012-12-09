@@ -22,10 +22,11 @@ setGeneric("set_title", function(object, text = NULL, align = "center", floating
 })
 
 #' @rdname set_title
-setMethod("set_title", "chart", function(object, text, align, floating, margin, style, useHTML, verticalAlign, x, y) {
+setMethod("set_title", "chart", function(object, text, align, floating, margin, style, useHTML, verticalAlign, 
+    x, y) {
     
-    object@options$title <- list(text = text, align = align, floating = floating, margin = margin, style = style, useHTML = useHTML, 
-        verticalAlign = verticalAlign, x = x, y = y)
+    object@options$title <- list(text = text, align = align, floating = floating, margin = margin, style = style, 
+        useHTML = useHTML, verticalAlign = verticalAlign, x = x, y = y)
     validObject(object)
     return(object)
 }) 
