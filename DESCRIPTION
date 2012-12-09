@@ -13,8 +13,8 @@ Depends:
 Collate:
     'chart-class.r'
     'get-options.r'
-    'print.r'
     'set-options.r'
     'set-subtitle.r'
     'set-title.r'
     'to-json.r'
+    'print.r'

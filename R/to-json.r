@@ -2,7 +2,6 @@
 #'
 #' Method to convert a chart object to a JSON character string.
 #' @param chart object
-#' @export
 #' @docType methods
 #' @rdname to_json
 setGeneric("to_json", function(object) {
