@@ -22,4 +22,4 @@ The code for this example is available at [https://gist.github.com/4242266](http
 
 ## License
 
-rHighcharts is licensed under [GPL-2](http://www.gnu.org/licenses/gpl-2.0.html). However, Highcharts JS that is included in this package is **not free** for commercial use. Read more about its license at [http://www.highcharts.com/license](http://www.highcharts.com/license).
+rHighcharts is licensed under [GPL-2](http://www.gnu.org/licenses/gpl-2.0.html). However, the Highcharts JavaScript library that is included in this package is **not free** for commercial use. Read more about its license at [http://www.highcharts.com/license](http://www.highcharts.com/license).
