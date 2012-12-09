@@ -11,8 +11,10 @@ Depends:
     R (>= 2.14.0),
     RJSONIO
 Collate:
-    'getOptions.R'
-    'Chart.R'
-    'print.R'
-    'setOptions.R'
-    'toJSON.R'
+    'chart-class.r'
+    'get-options.r'
+    'print.r'
+    'set-options.r'
+    'set-subtitle.r'
+    'set-title.r'
+    'to-json.r'

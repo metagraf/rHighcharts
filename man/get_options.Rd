@@ -1,6 +1,6 @@
 \docType{methods}
-\name{getOptions}
-\alias{getOptions}
+\name{get_options}
+\alias{get_options}
 \title{Get options of chart object}
 \description{
   Method to get the options list of a chart object.

@@ -1,8 +1,8 @@
-\name{Chart}
-\alias{Chart}
+\name{chart}
+\alias{chart}
 \title{Create new chart}
 \usage{
-  Chart(...)
+  chart(...)
 }
 \arguments{
   \item{...}{chart object}

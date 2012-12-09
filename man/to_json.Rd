@@ -1,6 +1,6 @@
 \docType{methods}
-\name{toJSON}
-\alias{toJSON}
+\name{to_json}
+\alias{to_json}
 \title{Convert chart to JSON}
 \arguments{
   \item{chart}{object}
