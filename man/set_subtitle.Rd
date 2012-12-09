@@ -5,15 +5,15 @@
 \arguments{
   \item{object}{Chart object}
 
-  \item{text}{The title of the chart. To disable the title,
-  set the text to null. Defaults to Chart title.}
+  \item{text}{The subtitle of the chart. To disable the
+  subtitle, set the text to NULL. Defaults to NULL.}
 
   \item{align}{The horizontal alignment of the title. Can
   be one of 'left', 'center' and 'right'. Defaults to
-  center.}
+  'center'.}
 
   \item{floating}{When the title is floating, the plot area
-  will not move to make space for it. Defaults to false.}
+  will not move to make space for it. Defaults to FALSE}
 
   \item{margin}{The margin between the title and the plot
   area, or if a subtitle is present, the margin between the
@@ -27,17 +27,17 @@
   text. Using HTML allows for advanced formatting, images
   and reliable bi-directional text rendering. Note that
   exported images won't respect the HTML. Defaults to
-  false.}
+  FALSE.}
 
   \item{verticalAlign}{The vertical alignment of the title.
   Can be one of 'top', 'middle' and 'bottom'. Defaults to
-  top.}
+  'top'.}
 
-  \item{x}{The x position of the title relative to the
+  \item{x}{The x position of the subtitle relative to the
   alignment within chart.spacingLeft and
   chart.spacingRight. Defaults to 0.0.}
 
-  \item{y}{The y position of the title relative to the
+  \item{y}{The y position of the subtitle relative to the
   alignment within chart.spacingTop and
   chart.spacingBottom. Defaults to 15.0.}
 }
