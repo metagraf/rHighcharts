@@ -12,9 +12,16 @@ Chart <- setRefClass(
         #'
         #' Method that runs when a new chart object is initialized.
         initialize = function(options = NULL) {
-            .self$options <- append(
+            options <<- append(
                 list(chart = list(renderTo = "highchart")),
                 options)
+        },
+        
+        #' Add options
+        #' 
+        #' Method to add options to the options field
+        add = function(opt) {
+            options <<- append(options, opt)        
         },
         
         #' Set a new title for the chart
