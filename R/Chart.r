@@ -1,6 +1,4 @@
 #' Chart class
-#' 
-#' @example a <- rHighcharts:::Chart$new()
 Chart <- setRefClass(
     "Chart",
     fields = list(options = "list"),
@@ -14,13 +12,6 @@ Chart <- setRefClass(
                 list(chart = list(renderTo = "highchart")),
                 options)
         },
-        
-        #' Add options (REMOVE?)
-        #' 
-        #' Method to add an option to options list
-        #add = function(opt) {
-        #    options <<- append(options, opt)
-        #},
         
         #' Set a new title for the chart
         #'
@@ -47,7 +38,7 @@ Chart <- setRefClass(
                          verticalAlign = "top", 
                          x = 0, 
                          y = 15) {
-        .self$options$title <- list(text = text, align = align, floating = floating, margin = margin, 
+        .self$options[["title"]] <- list(text = text, align = align, floating = floating, margin = margin, 
                  style = style, useHTML = useHTML, verticalAlign = verticalAlign, x = x, y = y)
         },
         
@@ -73,7 +64,7 @@ Chart <- setRefClass(
                          verticalAlign = "top", 
                          x = 0, 
                          y = 15) {
-            .self$options$subtitle <- list(text = text, align = align, floating = floating, margin = margin, 
+            .self$options[["subtitle"]] <- list(text = text, align = align, floating = floating, margin = margin, 
                                         style = style, useHTML = useHTML, verticalAlign = verticalAlign, x = x, y = y)
         },
         
@@ -83,10 +74,8 @@ Chart <- setRefClass(
         #' After building a chart one usually wants to convert it to a HTML character string.
         #' The JavaScript files are included in the rHighcharts package, and thus automatically added to the HTML file.
         print = function() {
-            
             jquery_js <- file.path(system.file(package = "rHighcharts"), "jquery.min.js")
             highcharts_js <- file.path(system.file(package = "rHighcharts"), "highcharts.js")
-            
             html <- sprintf("\n<script type=\"text/javascript\">%s</script>\n\n<script type=\"text/javascript\">jQuery.noConflict();</script>\n\n<script type=\"text/javascript\">%s</script>\n\n<script type=\"text/javascript\">\n(function($){ $(function () { var chart = new Highcharts.Chart(%s);});})(jQuery);\n</script>\n\n<div id=\"highchart\"></div>", 
                             readChar(jquery_js, file.info(jquery_js)$size), readChar(highcharts_js, file.info(highcharts_js)$size), 
                             RJSONIO:::toJSON(.self$options))
