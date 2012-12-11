@@ -1,3 +1,7 @@
+
+#' Create new chart
+chart <- function(...) rHighcharts:::Chart$new(...)
+
 #' Chart class
 Chart <- setRefClass(
     "Chart",
