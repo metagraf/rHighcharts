@@ -1,3 +1,4 @@
+#' Chart class
 Chart <- setRefClass(
     "Chart",
     fields = list(options = "list"),
@@ -32,8 +33,6 @@ Chart <- setRefClass(
         #' @param verticalAlign The vertical alignment of the title. Can be one of 'top', 'middle' and 'bottom'. Defaults to 'top'.
         #' @param x The x position of the title relative to the alignment within chart.spacingLeft and chart.spacingRight. Defaults to 0.0.
         #' @param y The y position of the title relative to the alignment within chart.spacingTop and chart.spacingBottom. Defaults to 15.0.
-        #' @docType methods
-        #' @rdname title
         title = function(text = NULL, 
                          align = "center", 
                          floating = FALSE, 
@@ -63,8 +62,6 @@ Chart <- setRefClass(
         #' @param verticalAlign The vertical alignment of the title. Can be one of 'top', 'middle' and 'bottom'. Defaults to 'top'.
         #' @param x The x position of the subtitle relative to the alignment within chart.spacingLeft and chart.spacingRight. Defaults to 0.0.
         #' @param y The y position of the subtitle relative to the alignment within chart.spacingTop and chart.spacingBottom. Defaults to 15.0.
-        #' @docType methods
-        #' @rdname subtitle
         subtitle = function(text = NULL, 
                          align = "center", 
                          floating = FALSE, 

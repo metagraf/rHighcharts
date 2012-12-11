@@ -1,13 +1,7 @@
-\name{chart}
-\alias{chart}
-\title{Create new chart}
-\usage{
-  chart(...)
-}
-\arguments{
-  \item{...}{chart object}
-}
+\name{Chart}
+\alias{Chart}
+\title{Chart class}
 \description{
-  Use this to create a new form object.
+  Chart class
 }
 

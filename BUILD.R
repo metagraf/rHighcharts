@@ -1,7 +1,7 @@
 # Run before pushing to github
 
-require("formatR")
-tidy.dir("R")  # Fix code formatting
+#require("formatR")
+#tidy.dir("R")  # Fix code formatting
 
 require("devtools")
 document()  # Fix documentation with roxygen
