@@ -18,7 +18,7 @@ See the example below for a simple illustration of how to use this package with 
 
 ![](http://cloud.github.com/downloads/reinholdsson/rHighcharts/rHighcharts-app-screenshot.png)
 
-The code for this example is available at [https://gist.github.com/4242266](https://gist.github.com/4242266).
+The example is also available live at [http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/](http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/) and the code can be found at at [https://gist.github.com/4242266](https://gist.github.com/4242266).
 
 ## License
 
