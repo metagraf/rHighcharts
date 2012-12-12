@@ -1,7 +1,13 @@
-\name{Chart}
-\alias{Chart}
-\title{Chart class}
+\name{chart}
+\alias{chart}
+\title{Create new chart}
+\usage{
+  chart(...)
+}
+\arguments{
+  \item{...}{Chart class attributes}
+}
 \description{
-  Chart class
+  Create new chart
 }
 

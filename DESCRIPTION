@@ -15,4 +15,5 @@ Depends:
     R (>= 2.14.0),
     RJSONIO
 Collate:
-    'Chart.r'
+    'Chart-class.r'
+    'chart.r'
