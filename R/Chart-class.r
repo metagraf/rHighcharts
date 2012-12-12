@@ -63,33 +63,38 @@ Chart <- setRefClass(
         #' Convert a chart object to HTML.
         #' After building a chart one usually wants to convert it to a HTML character string.
         #' The JavaScript files are included in the rHighcharts package, and thus automatically added to the HTML file.
-        print = function() {
+        print = function(id = sprintf("highchart-%s", sample(1:100000, 1)), files = TRUE) {
+
+            # TODO: Fix attribute 'files' so that one may print more than one chart on a page.
             
-            opt$chart$renderTo <<- "highchart"
+            opt$chart$renderTo <<- id
             opt$credits$text <<- "rHighcharts: An R wrapper for Highcharts JS"
             opt$credits$href <<- "https://github.com/reinholdsson/rHighcharts"
             
-            js <- file.path(system.file(package = "rHighcharts"), c(
-                "jquery.min.js", 
-                "highcharts.js",
-                "highcharts-more.js"))
-           
-            js <- paste(sapply(js, function(x) readChar(x, file.info(x)$size)), collapse = "\n")
-            
-            #html <- sprintf("\n<script type=\"text/javascript\">%s</script>\n\n<script type=\"text/javascript\">jQuery.noConflict();</script>\n\n<script type=\"text/javascript\">%s</script>\n\n<script type=\"text/javascript\">\n(function($){ $(function () { var chart = new Highcharts.Chart(%s);});})(jQuery);\n</script>\n\n<div id=\"highchart\"></div>", 
-            #                js, RJSONIO:::toJSON(opt))
-            
             html <- sprintf("<script type=\"text/javascript\">
-                                %s
-                                jQuery.noConflict();
                                     (function($){
                                         $(function () {
-                                            var chart = new Highcharts.Chart( %s );
+                                            var chart = new Highcharts.Chart(%s);
                                         });
                                     })(jQuery);
                             </script>
-                            <div id=\"highchart\"></div>",
-                            js, RJSONIO:::toJSON(opt))
+                            <div id=\"%s\"></div>",
+                            RJSONIO:::toJSON(opt), id)
+            
+            if (files) {
+                js <- file.path(system.file(package = "rHighcharts"), c(
+                    "jquery.min.js", 
+                    "highcharts.js",
+                    "highcharts-more.js"))
+                
+                js <- sprintf("<script type=\"text/javascript\">
+                                    %s
+                                    jQuery.noConflict();
+                               </script>", 
+                              paste(sapply(js, function(x) readChar(x, file.info(x)$size)), collapse = "\n"))
+                
+                html <- paste(js, html)
+            }
             
             return(html)
         }

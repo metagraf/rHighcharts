@@ -17,7 +17,12 @@ shinyServer(function(input, output) {
         a$data(x = survey$Age, y = survey$Pulse)  # Example 2a
         a$data(x = survey$Age + 25, y = survey$Pulse, name = "fixed data")  # Example 2b
         
-        a$print()
+        a$print(files = TRUE)
+        
+        b <- rHighcharts:::Chart$new()
+        b$data(survey, files = FALSE)
+        b$print(files = TRUE)
+        
         
     })
 })
