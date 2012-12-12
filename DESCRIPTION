@@ -16,4 +16,3 @@ Depends:
     RJSONIO
 Collate:
     'Chart-class.r'
-    'chart.r'
