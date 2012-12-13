@@ -23,11 +23,8 @@ Chart <- setRefClass(
         pane = function(...) opt$pane <<- list(...),
         plotOptions = function(...) opt$plotOptions <<- list(...),
         series = function(..., replace = FALSE) {
-            if (replace) {
-                opt$series <<- list(list(...))
-            } else {
-                opt$series <<- c(opt$series, list(list(...)))
-            }
+            opt$series <<- if (replace) list(list(...))
+                else c(opt$series, list(list(...)))
         },
         subtitle = function(...) opt$subtitle <<- list(...), 
         title = function(...) opt$title <<- list(...),
