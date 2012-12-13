@@ -1,7 +1,7 @@
 Package: rHighcharts
 Type: Package
 Title: Generate Highcharts in R
-Version: 0.0.2
+Version: 0.9.1
 Author: Thomas Reinholdsson
 Maintainer: Thomas Reinholdsson <reinholdsson@gmail.com>
 Description: An R package to generate Highcharts graphs from within R. The
