@@ -32,8 +32,15 @@ Chart <- setRefClass(
         subtitle = function(...) opt$subtitle <<- list(...), 
         title = function(...) opt$title <<- list(...),
         tooltip = function(...) opt$tooltip <<- list(...),
-        xAxis = function(...) opt$xAxis <<- list(...),
-        yAxis = function(...) opt$yAxis <<- list(...),
+        
+        xAxis = function(..., replace = FALSE) {
+            opt$xAxis <<- if (replace) list(list(...))
+                else c(opt$xAxis, list(list(...)))
+        },
+        yAxis = function(..., replace = FALSE) {
+            opt$yAxis <<- if (replace) list(list(...))
+                else c(opt$yAxis, list(list(...)))
+        },
         
         #' Add data
         #' 
