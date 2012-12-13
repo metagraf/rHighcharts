@@ -11,14 +11,9 @@ charts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
     
 ## Example
 
-See the example below for a simple illustration of how to use this package with a shiny web server. 
-
-    library(shiny)
-    runGist(4242266)
+An example is available at [http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/](http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/).
 
 ![](http://cloud.github.com/downloads/reinholdsson/charts/rHighcharts-app-screenshot.png)
-
-The example is also available live at [http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/](http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/) and the code can be found at at [https://gist.github.com/4242266](https://gist.github.com/4242266).
 
 ## License
 

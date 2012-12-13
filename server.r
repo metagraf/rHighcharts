@@ -1,16 +1,20 @@
 library(charts)
-library(MASS)
 
 shinyServer(function(input, output) {
     output$chart <- reactiveText(function() {
         
+        df <- data.frame(USPersonalExpenditure)
+        colnames(df) <- paste("Year", substr(colnames(df), 2, 5))
+        
         a <- charts:::Chart$new()
-        a$chart(inverted = FALSE, type = "line")
-        a$title(text = "Survey")
-        a$subtitle(text = "Data from 2002 to 2012")
-        a$xAxis(title = list(text = "Age"))
-        a$yAxis(title = list(text = "Pulse"), type = "logarithmic")
-        a$data(x = c(1,2,3,5), y = c(10,54,21,65))  # Example 2a
+        a$chart(type = "column")
+        a$title(text = "Personal Expenditures")
+        a$subtitle(text = "Data from 1940 to 1960")
+        
+        a$xAxis(categories = rownames(df))
+        a$yAxis(title = list(text = "Expenditures"))
+        
+        a$data(df)
         a$print()
     
     })
