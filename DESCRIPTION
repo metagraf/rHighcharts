@@ -1,15 +1,14 @@
-Package: rHighcharts
+Package: charts
 Type: Package
-Title: Generate Highcharts in R
+Title: charts: An R wrapper for Highcharts JS
 Version: 0.9.1
 Author: Thomas Reinholdsson
 Maintainer: Thomas Reinholdsson <reinholdsson@gmail.com>
-Description: An R package to generate Highcharts graphs from within R. The
-    package depends on the Highcharts JS, a JavaScript charting library based
-    on SVG and VML rendering, by Highsoft Solutions AS. rHighcharts is packaged
-    with Highcharts JS v2.3.3 and jQuery v1.7.1. Highcharts JS is not free for
-    commercial use. Read more about the Highcharts licence at
-    http://www.highcharts.com/license.
+Description: charts package is an R wrapper for the Highcharts JS, which is a
+    JavaScript charting library based on SVG and VML rendering by Highsoft
+    Solutions AS. Highcharts JS is not free for commercial use, so make sure
+    you have a valid license to use it. charts is packaged with Highcharts JS
+    v2.3.3 and jQuery v1.7.1.
 License: GPL-2
 Depends:
     R (>= 2.14.0),

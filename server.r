@@ -1,10 +1,10 @@
-library(rHighcharts)
+library(charts)
 library(MASS)
 
 shinyServer(function(input, output) {
     output$chart <- reactiveText(function() {
         
-        a <- rHighcharts:::Chart$new()
+        a <- charts:::Chart$new()
         a$chart(inverted = FALSE, type = "line")
         a$title(text = "Survey")
         a$subtitle(text = "Data from 2002 to 2012")
