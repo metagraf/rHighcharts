@@ -9,7 +9,7 @@ charts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
     library(devtools)
     install_github("charts", "reinholdsson")
     
-## Example
+## Examples
 
 An example is available at [http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/](http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/).
 
