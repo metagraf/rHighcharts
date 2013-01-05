@@ -7,7 +7,7 @@ charts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
 ## Installation
 
     library(devtools)
-    install_github("charts", "reinholdsson")
+    install_github("charts", "metagraf")
     
 ## Examples
 
