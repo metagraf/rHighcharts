@@ -16,4 +16,4 @@ Depends:
 Collate:
     'Chart-class.r'
     'Shiny.r'
-    'hc-javascript.r'
+    'javascript.r'

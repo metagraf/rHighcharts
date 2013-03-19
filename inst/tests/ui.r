@@ -22,8 +22,7 @@ shinyUI(pageWithSidebar(
     
     # Show a plot of the generated distribution
     mainPanel(
-#         includeHTML(a),
-        jsOutput(),
+        HTML(javascript()),
         htmlOutput("columnchart"),
         htmlOutput("barchart")
     )

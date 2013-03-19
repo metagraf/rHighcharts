@@ -18,13 +18,14 @@
 #     }
 # }
 
-#' javascriptOutput
-#' 
-#' ...
-#' 
-#' @export
-jsOutput <- function() {
-    a <- tempfile()
-    write(javascript(), a)
-    shiny::includeHTML(a)
-}
+# #' javascriptOutput
+# #' 
+# #' ...
+# #' 
+# #' @export
+# jsOutput <- function() {
+#     #a <- tempfile()
+#     #write(javascript(), a)
+#     #shiny::includeHTML(a)
+#     HTML(javascript())
+# }

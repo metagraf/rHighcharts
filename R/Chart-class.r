@@ -4,8 +4,8 @@ Chart <- setRefClass(
     methods = list(
         initialize = function(x = NULL) {
             opt <<- if (is.null(x)) list() else x
-            #opt$credits$text <<- "charts: An R wrapper for Highcharts JS"
-            #opt$credits$href <<- "https://github.com/metagraf/charts"
+            opt$credits$text <<- ""
+            opt$credits$href <<- ""
         },
 
         #' Wrappers
