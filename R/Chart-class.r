@@ -4,8 +4,8 @@ Chart <- setRefClass(
     methods = list(
         initialize = function(x = NULL) {
             opt <<- if (is.null(x)) list() else x
-            opt$credits$text <<- "charts: An R wrapper for Highcharts JS"
-            opt$credits$href <<- "https://github.com/metagraf/charts"
+            #opt$credits$text <<- "charts: An R wrapper for Highcharts JS"
+            #opt$credits$href <<- "https://github.com/metagraf/charts"
         },
 
         #' Wrappers
@@ -69,10 +69,8 @@ Chart <- setRefClass(
         #' Convert a chart object to HTML.
         #' After building a chart one usually wants to convert it to a HTML character string.
         #' The JavaScript files are included in the charts package, and thus automatically added to the HTML file.
-        print = function(id = "mychart", files = TRUE) {
+        print = function(id = tempfile(), files = FALSE) {
 
-            # TODO: Fix attribute 'files' so that one may print more than one chart on a page.
-            
             opt$chart$renderTo <<- as.character(id)
             
             html <- sprintf("<script type=\"text/javascript\">
@@ -86,17 +84,7 @@ Chart <- setRefClass(
                             RJSONIO:::toJSON(opt), id)
             
             if (files) {
-                js <- file.path(system.file(package = "charts"), c(
-                    "jquery.min.js", 
-                    "highcharts.js",
-                    "highcharts-more.js"))
-                
-                js <- sprintf("<script type=\"text/javascript\">
-                                    %s
-                                    jQuery.noConflict();
-                               </script>", 
-                              paste(sapply(js, function(x) readChar(x, file.info(x)$size)), collapse = "\n"))
-                
+                js <- javascript()
                 html <- paste(js, html)
             }
             

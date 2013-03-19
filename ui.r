@@ -1,3 +1,0 @@
-shinyUI(bootstrapPage(
-    htmlOutput("chart")
-))
