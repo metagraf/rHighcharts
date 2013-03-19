@@ -11,7 +11,7 @@ rHighcharts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
     
 ## Examples
 
-An example is available at [http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/](http://glimmer.rstudio.com/reinholdsson/rHighcharts-app-1/).
+See [http://glimmer.rstudio.com/reinholdsson/rHighcharts/](http://glimmer.rstudio.com/reinholdsson/rHighcharts/).
 
 ## License
 
