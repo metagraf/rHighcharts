@@ -4,7 +4,7 @@
 #' 
 #' @export
 javascript <- function() {
-    js <- file.path(system.file(package = "charts"), c(
+    js <- file.path(system.file(package = "rHighcharts"), "js", c(
         "jquery.min.js", 
         "highcharts.js",
         "highcharts-more.js"))

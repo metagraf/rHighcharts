@@ -89,6 +89,16 @@ Chart <- setRefClass(
             }
             
             return(html)
+        },
+        
+        show = function() {
+            plot()
+        },
+        
+        plot = function() {
+            # How to pass an argument, either tempfile() or chart html code, to the app when it starts?
+            shiny::runApp(file.path(system.file(package = "rHighcharts"), "shiny-show-app/"))
         }
-    )
+    ),
+    
 )
