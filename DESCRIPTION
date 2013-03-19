@@ -12,7 +12,8 @@ Description: charts package is an R wrapper for the Highcharts JS, which is a
 License: GPL-2
 Depends:
     R (>= 2.14.0),
-    RJSONIO
+    RJSONIO,
+    shiny
 Collate:
     'Chart-class.r'
     'Shiny.r'

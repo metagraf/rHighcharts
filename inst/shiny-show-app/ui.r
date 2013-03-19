@@ -1,7 +1,4 @@
-library(shiny)
-library(rHighcharts)
-
 shinyUI(bootstrapPage(
-        HTML(javascript()),
+        HTML(javascript()),  # include all necessary javascript files
         htmlOutput("show")
 ))
