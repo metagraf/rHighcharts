@@ -1,7 +1,7 @@
-Package: charts
+Package: rHighcharts
 Type: Package
-Title: charts: An R wrapper for Highcharts JS
-Version: 0.9.1
+Title: rHighcharts: An R wrapper for Highcharts JS
+Version: 0.9.2
 Author: Thomas Reinholdsson
 Maintainer: Thomas Reinholdsson <reinholdsson@gmail.com>
 Description: charts package is an R wrapper for the Highcharts JS, which is a
@@ -15,3 +15,5 @@ Depends:
     RJSONIO
 Collate:
     'Chart-class.r'
+    'Shiny.r'
+    'hc-javascript.r'
