@@ -69,7 +69,7 @@ Chart <- setRefClass(
         #' Convert a chart object to HTML.
         #' After building a chart one usually wants to convert it to a HTML character string.
         #' The JavaScript files are included in the charts package, and thus automatically added to the HTML file.
-        print = function(id = tempfile(), files = FALSE) {
+        html = function(id = tempfile(), files = FALSE) {
 
             opt$chart$renderTo <<- as.character(id)
             
@@ -92,13 +92,8 @@ Chart <- setRefClass(
         },
         
         show = function() {
-            plot()
-        },
-        
-        plot = function() {
             tmp <<- tempfile()
             write(a$print(), tmp)
-            # How to pass an argument, either tempfile() or chart html code, to the app when it starts?
             shiny::runApp(file.path(system.file(package = "rHighcharts"), "shiny-show-app/"))
         }
     ),
