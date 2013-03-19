@@ -16,5 +16,4 @@ Depends:
     shiny
 Collate:
     'Chart-class.r'
-    'Shiny.r'
     'javascript.r'
