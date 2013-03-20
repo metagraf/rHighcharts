@@ -53,15 +53,15 @@ Chart <- setRefClass(
                         warning (sprintf("Column '%s' wasn't added since it's not a numeric", i))
                     } 
                 }
-            } else if (is.numeric(x)) {
+            } else {
                 if (is.null(y) || !is.numeric(y)) {
                     series(data = x, ...)
                 } else {
                     if (length(x) != length(y)) stop ("Arguments x and y must be of the same length")
-                    xy <- lapply(1:length(x), function(i) c(x[i], y[i]))
+                    xy <- lapply(1:length(x), function(i) list(x[i], y[i]))
                     series(data = xy, ...)
                 }
-            } else { stop ("Argument x must be a data frame or a numeric vector") }
+            }
         },
 
         #' Print chart as HTML
