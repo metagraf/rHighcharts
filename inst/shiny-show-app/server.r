@@ -1,5 +1,5 @@
 shinyServer(function(input, output) {
     output$show <- renderText({
-        readChar(tmp, file.info(tmp)$size)  # read chart html from tempfile
+        chart_html  # global variable set by the Chart-class
     })
 })

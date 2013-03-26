@@ -93,8 +93,7 @@ Chart <- setRefClass(
         },
         
         show = function() {
-            tmp <<- tempfile()
-            write(html(), tmp)
+            chart_html <<- html()  # put html in global variable used by the shiny app
             shiny::runApp(file.path(system.file(package = "rHighcharts"), "shiny-show-app"))
         }
     ),
