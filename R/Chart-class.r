@@ -85,7 +85,7 @@ Chart <- setRefClass(
                             RJSONIO:::toJSON(opt), id)
             
             if (files) {
-                js <- javascript()
+                js <- add_js_files()
                 html <- paste(js, html)
             }
             
@@ -93,8 +93,8 @@ Chart <- setRefClass(
         },
         
         show = function() {
-            .chart_html <<- html()  # put html in global variable used by the shiny app
-            shiny::runApp(file.path(system.file(package = "rHighcharts"), "shiny-show-app"))
+            .chart_object <<- .self$copy()  # put chart object in global variable (for shiny)
+            shiny::runApp(file.path(system.file(package = "rHighcharts"), "show-app"))
         }
     ),
     
