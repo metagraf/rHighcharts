@@ -8,6 +8,7 @@ renderChart <- function(expr, env=parent.frame(), quoted=FALSE) {
     
     function() {
         chart <- func()
-        paste(singleton(HTML(add_js_files())), chart$html())
+        chart$html()
+        #paste(singleton(HTML(add_js_files())), chart$html())
     }
 }
