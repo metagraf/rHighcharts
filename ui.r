@@ -1,4 +1,5 @@
 require(shiny)
+require(rHighcharts)
 
 shinyUI(bootstrapPage(
     mainPanel(
@@ -6,7 +7,7 @@ shinyUI(bootstrapPage(
         h2("rHighcharts: An R wrapper for Highcharts JS"),
         p(HTML('<a href="https://github.com/metagraf/rHighcharts">https://github.com/metagraf/rHighcharts</a>')),
         p("rHighcharts package is an R wrapper for the Highcharts JS, which is a JavaScript charting library based on SVG and VML rendering by Highsoft Solutions AS. Highcharts JS is not free for commercial use, so make sure you have a valid license to use it."),
-        p("rHighcharts is packaged with Highcharts JS v3.0.0"),
+        p("rHighcharts is packaged with Highcharts JS v3.0.0."),
         h4("Installation"),
         pre('
             library(devtools)

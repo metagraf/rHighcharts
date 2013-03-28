@@ -93,7 +93,7 @@ Chart <- setRefClass(
         },
         
         show = function() {
-            .chart_object <<- .self$copy()  # put chart object in global variable (for shiny)
+            .chart_object <- .self$copy()  # put chart object in global variable (for shiny)
             shiny::runApp(file.path(system.file(package = "rHighcharts"), "show-app"))
         }
     ),
