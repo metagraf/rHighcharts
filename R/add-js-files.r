@@ -1,11 +1,10 @@
-#' Javascript
+#' Add js files
 #' 
-#' ...
+#' Return Highcharts Javascript files code as HTML
 #' 
 #' @export
-javascript <- function() {
+add_js_files <- function() {
     js <- file.path(system.file(package = "rHighcharts"), "js", c(
-        "jquery.min.js", 
         "highcharts.js",
         "highcharts-more.js"))
     

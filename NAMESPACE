@@ -1,2 +1,2 @@
-export(javascript)
+export(add_js_files)
 export(renderChart)
