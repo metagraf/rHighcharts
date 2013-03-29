@@ -2,7 +2,7 @@
 
 rHighcharts package is an R wrapper for the [Highcharts JS](https://github.com/highslide-software/highcharts.com), which is a JavaScript charting library based on SVG and VML rendering by [Highsoft Solutions AS](http://highsoft.com/). Highcharts JS is not free for commercial use, so make sure you have a valid license to use it.
 
-rHighcharts is packaged with Highcharts JS v2.3.3 and jQuery v1.7.1.
+rHighcharts is packaged with Highcharts JS v3.0.0.
 
 ## Installation
 
