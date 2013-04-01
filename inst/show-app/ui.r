@@ -1,5 +1,4 @@
 require(rHighcharts)
 shinyUI(bootstrapPage(
-        chart_js(),
-        htmlOutput("show")
+        chartOutput("show")
 ))

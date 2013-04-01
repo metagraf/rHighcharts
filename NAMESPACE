@@ -1,6 +1,5 @@
-export(add_js_files)
-export(chart_js)
 export(chartOutput)
+export(includeJS)
 export(renderChart)
 import(RJSONIO)
 import(shiny)

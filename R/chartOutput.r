@@ -6,5 +6,8 @@
 #' 
 #' @export
 chartOutput <- function(outputId) {
-    shiny::htmlOutput(outputId)
+    div(class="rHighcharts",
+        shiny::singleton(shiny::HTML(includeJS())), 
+        shiny::htmlOutput(outputId)
+    )
 }
