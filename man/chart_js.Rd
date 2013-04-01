@@ -1,6 +1,6 @@
 \name{chart_js}
 \alias{chart_js}
-\title{Add highcharts js files}
+\title{Add Highcharts JavaScript files (use with Shiny)}
 \usage{
   chart_js(...)
 }
