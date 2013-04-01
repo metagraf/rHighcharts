@@ -7,18 +7,18 @@
 \arguments{
   \item{expr}{An expression that returns a chart object}
 
-  \item{env}{The environment in which to evaluate the
-  expression.}
+  \item{env}{The environment in which to evaluate
+  \code{expr}.}
 
-  \item{quoted}{Is expr a quoted expression (with quote())?
-  This is useful if you want to save an expression in a
-  variable.}
+  \item{quoted}{Is expr a quoted expression (with
+  \code{quote()})? This is useful if you want to save an
+  expression in a variable.}
 }
 \description{
   Use rHighchart charts as Shiny output. First, use
-  renderChart in server.R to assign the chart object to an
-  Shiny output. Then create an chartOutput with the same
-  name in ui.R. chartOutput is currently just an alias for
-  htmlOutput.
+  \code{renderChart} in \code{server.R} to assign the chart
+  object to an Shiny output. Then create an chartOutput
+  with the same name in \code{ui.R}. \code{chartOutput} is
+  currently just an alias for \code{htmlOutput}.
 }
 
