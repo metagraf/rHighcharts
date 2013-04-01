@@ -1,6 +1,12 @@
-#' Chart class
+#' @title Chart class
 #' 
-#' ...
+#' @description The Chart class is a wrapper for the Highcharts API. It also includes \code{data()} and \code{html()} to extend with some additional functionality specific for R users.
+#' 
+#' @section \code{data()}: A method that may take either vectors or data frames as input.
+#' 
+#' @section \code{html()}: A method to convert the chart object to HTML code. The code does not include necessary JavaScript files (e.g. Highcharts and jQuery); however, when used with Shiny, those are included by using \code{chart_js()}. When plotting an object interactively with \code{show()}, all necessary files are automatically included.
+#' 
+#' @section Further documentation: For more documentation on the specific Highcharts methods, please visit \url{http://api.highcharts.com/highcharts}.
 #' 
 Chart <- setRefClass(
     "Chart",
@@ -12,10 +18,7 @@ Chart <- setRefClass(
             opt$credits$href <<- ""
         },
 
-        #' Wrappers
-        #' 
-        #' For more information see: 
-        #' http://api.highcharts.com/highcharts
+        #' Wrapper methods
         chart = function(...) opt$chart <<- list(...),
         colors = function(...) opt$colors <<- list(...),
         credits = function(...) opt$credits <<- list(...),
@@ -45,12 +48,7 @@ Chart <- setRefClass(
                 else c(opt$yAxis, list(list(...)))
         },
         
-        #' @title Add data
-        #' 
-        #' @description Add a data frame or vector to chart
-        #' 
-        #' @export
-        #' 
+        #' Custom add data method
         data = function(x = NULL, y = NULL, ...) {
             if (is.data.frame(x)) {
                 for (i in colnames(x)) {
@@ -72,10 +70,6 @@ Chart <- setRefClass(
         },
 
         #' Print chart as HTML
-        #'
-        #' Convert a chart object to HTML.
-        #' After building a chart one usually wants to convert it to a HTML character string.
-        #' The JavaScript files are included in the charts package, and thus automatically added to the HTML file.
         html = function(id = tempfile()) {  # tempfile() is just used to create a random string
 
             opt$chart$renderTo <<- as.character(id)
