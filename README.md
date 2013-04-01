@@ -9,9 +9,13 @@ rHighcharts is packaged with Highcharts JS v3.0.0.
     library(devtools)
     install_github("rHighcharts", "metagraf")
     
+## How to use
+
+See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson/rHighcharts/](http://glimmer.rstudio.com/reinholdsson/rHighcharts/)
+
 ## Examples
 
-See [http://glimmer.rstudio.com/reinholdsson/rHighcharts/](http://glimmer.rstudio.com/reinholdsson/rHighcharts/).
+Dashboard: [http://glimmer.rstudio.com/reinholdsson/dashboard/](http://glimmer.rstudio.com/reinholdsson/dashboard/)
 
 ## License
 
