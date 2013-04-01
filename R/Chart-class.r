@@ -9,7 +9,10 @@
 #' @section Further documentation: For more documentation on the specific Highcharts methods, please visit \url{http://api.highcharts.com/highcharts}.
 #' 
 #' @examples \dontrun{
-#' ### Bar chart ###
+#' 
+#' library(rHighcharts)
+#' 
+#' ### Bar chart
 #' a <- rHighcharts:::Chart$new()
 #' a$chart(type = "bar")
 #' a$plotOptions(column = list(stacking = "normal"))
@@ -21,7 +24,7 @@
 #' a$data(x)
 #' a  # show chart in browser
 #' 
-#' ### Pie chart ###
+#' ### Pie chart
 #' a <- rHighcharts:::Chart$new()
 #' a$title(text = "Fruits")
 #' a$data(x = c("Apples","Bananas","Oranges"), y = c(15, 20, 30), type = "pie", name = "amount")
