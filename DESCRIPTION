@@ -19,3 +19,4 @@ Collate:
     'add-js-files.r'
     'renderChart.r'
     'chart-js.r'
+    'chartOutput.r'

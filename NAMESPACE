@@ -1,3 +1,4 @@
 export(add_js_files)
 export(renderChart)
 export(chart_js)
+export(chartOutput)
