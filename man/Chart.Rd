@@ -25,4 +25,24 @@
   methods, please visit
   \url{http://api.highcharts.com/highcharts}.
 }
+\examples{
+\dontrun{
+### Bar chart ###
+a <- rHighcharts:::Chart$new()
+a$chart(type = "bar")
+a$plotOptions(column = list(stacking = "normal"))
+a$title(text = "US Personal Expenditure")
+a$yAxis(title = list(text = "US dollars"))
+x <- as.data.frame(t(USPersonalExpenditure))
+a$xAxis(categories = rownames(x))
+a$data(x)
+a  # show chart in browser
+
+### Pie chart ###
+a <- rHighcharts:::Chart$new()
+a$title(text = "Fruits")
+a$data(x = c("Apples","Bananas","Oranges"), y = c(15, 20, 30), type = "pie", name = "amount")
+a
+}
+}
 
