@@ -1,4 +1,4 @@
-#' Add highcharts js files
+#' Add Highcharts JavaScript files (use with Shiny)
 #' 
 #' Add to shiny ui before chart code
 #' 
