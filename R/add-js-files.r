@@ -1,8 +1,8 @@
-#' Add js files
+#' Add Highcharts JavaScript files
 #' 
-#' Return Highcharts Javascript files code as HTML
+#' Return all necessary Highcharts JavaScript files code as a HTML string.
+#' It does not include jQuery since it is already included in the Shiny package.
 #' 
-#' @export
 add_js_files <- function() {
     js <- file.path(system.file(package = "rHighcharts"), "js", c(
         "highcharts.js",
