@@ -1,3 +1,7 @@
+#' Chart class
+#' 
+#' ...
+#' 
 Chart <- setRefClass(
     "Chart",
     fields = list(opt = "list"),
@@ -41,9 +45,12 @@ Chart <- setRefClass(
                 else c(opt$yAxis, list(list(...)))
         },
         
-        #' Add data
+        #' @title Add data
         #' 
-        #' Add a data frame or vector to chart
+        #' @description Add a data frame or vector to chart
+        #' 
+        #' @export
+        #' 
         data = function(x = NULL, y = NULL, ...) {
             if (is.data.frame(x)) {
                 for (i in colnames(x)) {
@@ -69,8 +76,7 @@ Chart <- setRefClass(
         #' Convert a chart object to HTML.
         #' After building a chart one usually wants to convert it to a HTML character string.
         #' The JavaScript files are included in the charts package, and thus automatically added to the HTML file.
-        html = function(id = tempfile(), files = FALSE) {
-            # argument "id = tempfile()" just creates a random string (not any file)
+        html = function(id = tempfile()) {  # tempfile() is just used to create a random string
 
             opt$chart$renderTo <<- as.character(id)
             
@@ -83,12 +89,6 @@ Chart <- setRefClass(
                             </script>
                             <div id=\"%s\"></div>",
                             RJSONIO:::toJSON(opt), id)
-            
-            if (files) {
-                js <- add_js_files()
-                html <- paste(js, html)
-            }
-            
             return(html)
         },
         

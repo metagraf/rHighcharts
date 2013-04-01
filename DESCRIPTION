@@ -20,3 +20,4 @@ Collate:
     'renderChart.r'
     'chart-js.r'
     'chartOutput.r'
+    'rHighcharts.r'
