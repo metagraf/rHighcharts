@@ -6,8 +6,19 @@
 #' 
 #' @export
 chartOutput <- function(outputId) {
+    
+    # Add resource path
+    suppressMessages(singleton(addResourcePath("js", system.file('js', package='rHighcharts'))))
+
     div(class="rHighcharts",
-        shiny::singleton(shiny::HTML(includeJS())), 
-        shiny::htmlOutput(outputId)
+        
+        # Add javascript sources to header
+        tagList(
+            singleton(tags$head(tags$script(src = "js/highcharts.js", type='text/javascript'))),
+            singleton(tags$head(tags$script(src = "js/highcharts-more.js", type='text/javascript')))
+        ),
+        
+        # Add chart html
+        htmlOutput(outputId)
     )
 }
