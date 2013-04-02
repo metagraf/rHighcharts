@@ -1,5 +1,4 @@
 export(chartOutput)
-export(includeJS)
 export(renderChart)
 import(RJSONIO)
 import(shiny)
