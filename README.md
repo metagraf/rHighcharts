@@ -17,7 +17,7 @@ See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson
 
 ## Examples
 
-The following link provide an example of an interactive dashboard using Shiny: [http://glimmer.rstudio.com/reinholdsson/dashboard/](http://glimmer.rstudio.com/reinholdsson/dashboard/).
+The following link provide an example of an interactive dashboard using Shiny: [http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/).
 
 ## License
 
