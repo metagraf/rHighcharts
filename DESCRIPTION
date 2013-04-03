@@ -4,10 +4,10 @@ Title: rHighcharts: An R wrapper for Highcharts JS
 Version: 1.0
 Author: Thomas Reinholdsson
 Maintainer: Thomas Reinholdsson <reinholdsson@gmail.com>
-Description: charts package is an R wrapper for the Highcharts JS, which is a
+Description: rHighcharts package is an R wrapper for the Highcharts JS, which is a
     JavaScript charting library based on SVG and VML rendering by Highsoft
     Solutions AS. Highcharts JS is not free for commercial use, so make sure
-    you have a valid license to use it. charts is packaged with Highcharts JS
+    you have a valid license to use it. rHighcharts is packaged with Highcharts JS
     v3.0.0.
 License: GPL-2
 Depends:
