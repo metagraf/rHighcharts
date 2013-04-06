@@ -19,6 +19,30 @@ See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson
 
 The following link provide an example of an interactive dashboard using Shiny: [http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/).
 
+## Use with Shiny
+
+#### server.R
+```
+library(rHighcharts)
+shinyServer(function(input, output) {
+    output$chart <- renderChart({
+        a <- rHighcharts:::Chart$new()
+        a$title(text = "Fruits")
+        a$data(x = c("Apples","Bananas","Oranges"), y = c(15, 20, 30), type = "pie", name = "Amount")
+        return(a)
+    })
+})
+```
+
+#### ui.R
+```
+library(rHighcharts)
+shinyUI(bootstrapPage(
+    chartOutput("chart")
+))
+```
+
+
 ## License
 
 rHighcharts is licensed under [GPL-2](http://www.gnu.org/licenses/gpl-2.0.html). However, the Highcharts JavaScript library that is included in this package is **not free** for commercial use. Read more about its license at [http://www.highcharts.com/license](http://www.highcharts.com/license).
