@@ -17,7 +17,9 @@ See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson
 
 ## Examples
 
-The following link provide an example of an interactive dashboard using Shiny: [http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/).
+- [Simple Forecast](http://glimmer.rstudio.com/reinholdsson/savings/)
+- [BI Dashboard](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/)
+
 
 ## Use with Shiny
 
