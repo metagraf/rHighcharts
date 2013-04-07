@@ -17,8 +17,8 @@ See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson
 
 ## Examples
 
-- [Simple Forecast](http://glimmer.rstudio.com/reinholdsson/savings/)
-- [BI Dashboard](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/)
+- [Simple forecasting](http://glimmer.rstudio.com/reinholdsson/savings/)
+- [BI dashboard](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/)
 
 
 ## Use with Shiny
