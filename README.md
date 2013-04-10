@@ -44,6 +44,10 @@ shinyUI(bootstrapPage(
 ))
 ```
 
+## See also
+
+- [rNVD3](https://github.com/ramnathv/rNVD3) by [Ramnath Vaidyanathan](https://github.com/ramnathv)
+
 
 ## License
 
