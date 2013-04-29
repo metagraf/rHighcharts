@@ -2,6 +2,14 @@
 
 Created by Thomas Reinholdsson (<reinholdsson@gmail.com>).
 
+----------------------
+
+### NOTE
+
+**The functionality within this R package has been implemented into [rCharts](https://github.com/ramnathv/rCharts) created by [Ramnath Vaidyanathan](https://github.com/ramnathv). Please see [rCharts](https://github.com/ramnathv/rCharts) for further development.**
+
+----------------------
+
 rHighcharts package is an R wrapper for the [Highcharts JS](https://github.com/highslide-software/highcharts.com), which is a JavaScript charting library based on SVG and VML rendering by [Highsoft Solutions AS](http://highsoft.com/). Highcharts JS is not free for commercial use, so make sure you have a valid license to use it.
 
 rHighcharts is packaged with Highcharts JS v3.0.0.
@@ -46,8 +54,10 @@ shinyUI(bootstrapPage(
 
 ## See also
 
-- [rNVD3](https://github.com/ramnathv/rNVD3) by [Ramnath Vaidyanathan](https://github.com/ramnathv)
-
+- [rVega](https://github.com/metagraf/rVega) by [Thomas Reinholdsson](https://github.com/reinholdsson)
+- [rCharts](https://github.com/ramnathv/rCharts) by [Ramnath Vaidyanathan](https://github.com/ramnathv)
+- [gg2v](https://github.com/hadley/gg2v) by [Hadley Wickham](https://github.com/hadley)
+- [clickme](https://github.com/nachocab/clickme) by [Nacho Caballero](https://github.com/nachocab)
 
 ## License
 
