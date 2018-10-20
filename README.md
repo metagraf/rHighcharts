@@ -30,7 +30,7 @@ See instructions on the following page: [http://glimmer.rstudio.com/reinholdsson
 
 
 ## Use with Shiny
-
+Since version 0.1 you also can put all in the same file using shinyApp(ui = ui, server = server)
 #### server.R
 ```
 library(rHighcharts)
